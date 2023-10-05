@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2? famille = Rajdhani &family= Space+Grotesk:wght@300;400;500;600;700 & display=swap');
+@font-face {
+    font-family: 'rajdhani' ;
+    src: url(../Fonts/Rajdhani/Rajdhani-Medium.ttf);}
+
+@font-face {
+    font-family: 'Space Grotesk'; ;
+    src: url(../Fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --yellow-color: #FFFF00;
+    --yellow-light: #f8f184;
+    --blue-color: #19587d;
+    --yellow-color: #FFF;
+    --gradient-white: #eddebf67;
+    --gradient-red: #890008;
+    --black-color: #000000;
+    --gradient-blue: #19587d70;
+    --grey-color: #c4c4c450;
+    --aa-color:yellow;
+    --overlay-opacity-without-hover: 0.6 ;
+    --overlay-opacity-during-hover: 1 ;
+    --overlay-opacity: var( --overlay-opacity-without-hover ) ;
+    --white-color: #fff;
+
+}
+
+
+.container {
+    width: 80%;
+   margin: 0 auto;
+}
+
+
+body {
+
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    font-weight: 100;
+}
+
+.upbar{
+    border-top: #bcbbbd 3px solid ;
+    position: relative;
+    opacity: .4;
+    top: 120px;
+    margin-left:100px;
+    max-width: 85%;
+}
+
+.leftbar{
+    border-left: #bcbbbd 3px solid ;
+    opacity: .4;
+    float: left;
+    height: 2100px;
+    margin-left:97px;
+}
+
+.rightbar{
+    border-left: #bcbbbd 3px solid ;
+    opacity: .4;
+    float: left;
+    height: 2100px;
+    position: absolute;
+    right: 99px;
+}
+
+/*  Design de la navigation */
+
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 40px;
+padding-bottom: 20px;
+
+}
+
+
+nav ul {
+    list-style: none;
+    margin-right: 100px;
+    
+}
+
+.img a:hover, .img a:focus{
+    color: var(--aa-color);
+}
+
+
+nav ul li{
+    display: inline;
+ 
+}
+
+nav ul li a{
+    color: var(--white-color);
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'rajdhani';
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.image-hover:hover {
+    filter: invert(0%) sepia(100%) saturate(8000%) hue-rotate(360deg) brightness(199%) contrast(200%) opacity(100%);
+  }
+
+  .scroll img:hover {
+    filter: invert(0%) sepia(100%) saturate(8000%) hue-rotate(360deg) brightness(299%) contrast(100%) opacity(100%);
+  }
+  
+  .social-item img:hover {
+    filter: invert(0%) sepia(100%) saturate(8000%) hue-rotate(360deg) brightness(299%) contrast(100%) opacity(100%);
+  }
+
+
+nav ul li a:hover {
+    font-weight: 500;
+    text-decoration:underline;
+    text-underline-offset: 5px; 
+}
+
+/*Design de la partie en tête hero*/
+
+  @media only screen and (min-width: 400px) {
+    body {
+      background-image: url(Illustrations/Batgame_1.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  /*Design du level 1*/
+
+.Aside{
+    margin-top: 8%;
+}
+
+.Joker{
+    width: 15%;
+    margin-left: 150px;
+}
+
+.group{
+    width: 50%;
+    float: right;
+    margin-top: 15px;
+    margin-right: 140px;
+}
+
+.group p{
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+
+.btn-group{
+    width: 80%;
+    margin-top: 8px;
+    font-size: 20px;
+    font-family: 'Space Grotesk';
+    font-weight: 300;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: grey;
+    text-align: left;
+    padding-left: 10px;
+
+}
+
+.btn-group label{
+    padding-left: 10px;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+}
+
+
+/*Design du level 2*/
+
+
+/*Design de la Section Batman character*/
+
+.content{
+    max-width: 100%;
+    height: 50%;
+    line-height: 1.5;
+}
+
+.content::after{
+    content: '';
+    display: block;
+ 
+}
+
+#hero .fleche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 500px;
+}
+
+/*Content*/
+
+.content p{
+
+    margin-top: 10%;
+    width: 100%;
+    height: 50%;
+    font-family: 'rajdhani';
+    font-size: 40px;
+    font-weight: 700;
+    text-align: justify;
+    
+    
+}
+
+
+  
+  @media (min-width: 400px) {
+    .content p { 
+        font-size: calc(16px + 1vw); 
+        margin-left: 70px;
+       
+    }
+  }
+  
+  @media (min-width: 1001px){
+    .content p { 
+        font-size: 40px;
+        top: 300px;
+     }
+  }
+  
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 360px;
+    right: 48px;
+}
+
+
+.scroll .social{
+   padding: 15px 0;
+
+
+}
+
+
+h1 {
+    color: var(--white-color);
+}
+
+
+
+.scroll .social:hover{
+
+    color: yellow;
+
+}
+
+#Bat-game1{
+    text-align: center;
+    margin-top: 40%;
+    
+}
+
+#Bat-game1 .titre, .level{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 30px 0;
+    font-family: 'rajdhani';
+
+}
+
+@media (min-width: 400px) {
+    .Start img { 
+ width: 70%;
+       
+    }
+  }
+  
+  
+@media (max-width: 1600px) {
+    .Start img { 
+ width: 80%;
+       
+    }
+  }
+
+.btn{
+    background: linear-gradient(100deg,  rgba(255,255,255,0.5), rgba(247, 147, 54, 0.8)); 
+    width: 25%;
+    border: none;
+    padding: 25px 2px;
+    font-size: 18px;
+    margin: 100px 25px;
+   
+}
+
+@media (min-width: 400px) {
+    .btn a { 
+        font-size: 12px; 
+        color: #FFF;
+    font-weight: 500;
+    font-family: 'rajdhani';
+    list-style-type: none;
+    text-decoration: none;
+       
+    }
+  }
+  
+  @media (min-width: 1001px){
+    .btn a { 
+        font-size: 18px;
+        color: #FFF;
+    font-weight: 500;
+    font-family: 'rajdhani';
+    list-style-type: none;
+    text-decoration: none;
+     }
+
+
+
+.btn:hover{
+    cursor: pointer;
+    opacity: 1;
+    background: linear-gradient(100deg,  rgba(255,255,255,1), rgba(247, 147, 54, 1)); 
+ 
+}
+
+/*design Footer*/
+
+footer{
+    margin-top: 100px;
+}
+
+@media (min-width: 400px) {
+    .text-footer { 
+        font-size: 10px;
+        text-align: center;
+        
+    }
+  }
+
+  @media (max-width: 1600px) {
+    .text-footer { 
+        font-size: 16px;
+        text-align: center;
+
+    }
+  }
+
+.foot-img{
+    padding-top: 15px;
+}
+
+@media (min-width: 400px) {
+    .social-media{
+        text-align: center;
+        margin: 50px auto;
+    
+    }
+        
+    }
+  }
+
+
+.X{
+    padding: 15px;
+    background: none;
+
+}
+
+.social{
+    padding-bottom: 15px;
+}
+
+footer .social-item{
+    padding: 15px;
+
+}
+
